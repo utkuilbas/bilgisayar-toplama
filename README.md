@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💻 Bilgisayar Toplama Web Sitesi
 
-## Getting Started
+**Bilgisayar Toplama Sitesi**, kullanıcıların kendi bilgisayarlarını kolayca oluşturmalarını sağlayan etkileşimli bir web uygulamasıdır.
+Bu projede kullanıcı, işlemci, anakart, RAM, ekran kartı ve diğer parçaları seçerek uyumlu bir sistem toplayabilir.
 
-First, run the development server:
+---
+
+## Amaç
+
+* Bilgisayar bileşenlerini tek sayfada görüntülemek
+* Parçaları seçerek sistem oluşturmayı kolaylaştırmak
+* Uyumlu parçalar arasında seçim yapılmasını sağlamak
+* Kullanıcıya toplam fiyat ve yapı özeti sunmak
+
+---
+
+## Kullanılan Teknolojiler
+
+* **Next.js**
+* **TypeScript**
+* **Tailwind CSS**
+* **JSON verileri**
+
+---
+
+## Proje Yapısı
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bilgisayar-toplama/
+├── app/
+├── components/
+├── data/
+├── public/
+├── types/
+├── package.json
+├── next.config.ts
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Kurulum ve Çalıştırma
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Depoyu klonla:
 
-## Learn More
+   ```bash
+   git clone https://github.com/utkuilbas/bilgisayar-toplama.git
+   cd bilgisayar-toplama
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Gerekli bağımlılıkları yükle:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # veya
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Geliştirme sunucusunu başlat:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # veya
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Tarayıcıda aç:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Kullanım
+
+* Sayfa yüklendiğinde tüm bilgisayar bileşenleri listelenir.
+* Her kategori (işlemci, anakart, RAM, ekran kartı vb.) tek bir kart şeklinde gösterilir.
+* Kullanıcı, istediği bileşenleri seçtikçe toplam sistem fiyatı ve uyumluluk bilgisi güncellenir.
+* Tüm seçimler aynı sayfada yapılır (Single Page App).
+
+---
+
+## Paylaşım
+
+Bu proje eğitim amaçlı olarak geliştirilmiştir. Kod yapısını inceleyebilir ve kendi projelerinizde referans olarak kullanabilirsiniz.
