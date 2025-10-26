@@ -1,26 +1,101 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	--background: #f6f7fb;
+	--surface: #fff;
+	--primary: #7c3aed;
+	--primary-hover: #5b21b6;
+	--accent: #06b6d4;
+	--danger: #ef4444;
+	--text-main: #232946;
+	--text-secondary: #6b7280;
+	--card-shadow: 0 4px 24px rgba(124,58,237,0.08);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(135deg, #f6f7fb 0%, #e0e7ff 100%);
+	color: var(--text-main);
+	font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+	min-height: 100vh;
+}
+
+.modern-card {
+	background: var(--surface);
+	border-radius: 1.2rem;
+	box-shadow: var(--card-shadow);
+	padding: 2rem;
+	transition: box-shadow 0.2s;
+}
+.modern-card:hover {
+	box-shadow: 0 8px 32px rgba(124,58,237,0.16);
+}
+
+.modern-btn {
+	background: linear-gradient(90deg, var(--primary), var(--accent));
+	color: #fff;
+	border: none;
+	border-radius: 0.8rem;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	box-shadow: 0 2px 8px rgba(6,182,212,0.08);
+	cursor: pointer;
+	transition: background 0.2s, box-shadow 0.2s;
+}
+.modern-btn:hover {
+	background: linear-gradient(90deg, var(--primary-hover), var(--accent));
+	box-shadow: 0 4px 16px rgba(124,58,237,0.12);
+}
+
+.modern-danger {
+	background: var(--danger);
+	color: #fff;
+}
+
+.modern-navbar {
+	background: var(--surface);
+	box-shadow: 0 2px 12px rgba(124,58,237,0.06);
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.modern-category {
+	background: linear-gradient(90deg, #e0e7ff 0%, #f6f7fb 100%);
+	border-radius: 0.8rem;
+	padding: 1rem 1.5rem;
+	color: var(--primary);
+	font-weight: 500;
+	box-shadow: 0 2px 8px rgba(124,58,237,0.04);
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+.modern-category.selected {
+	background: var(--primary);
+	color: #fff;
+}
+
+.modern-summary {
+	background: var(--surface);
+	border-radius: 1rem;
+	box-shadow: 0 2px 12px rgba(6,182,212,0.08);
+	padding: 2rem;
+	color: var(--text-main);
+}
+
+.modern-title {
+	font-size: 2.2rem;
+	font-weight: 800;
+	color: var(--primary);
+	margin-bottom: 1.5rem;
+	letter-spacing: -1px;
+}
+
+.modern-subtitle {
+	font-size: 1.2rem;
+	color: var(--text-secondary);
+	margin-bottom: 1rem;
 }
