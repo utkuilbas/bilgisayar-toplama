@@ -17,9 +17,9 @@ Bu projede kullanıcı, işlemci, anakart, RAM, ekran kartı ve diğer parçalar
 ## Kullanılan Teknolojiler
 
 * **Next.js**
+* **React**
 * **TypeScript**
 * **Tailwind CSS**
-* **JSON verileri**
 
 ---
 
@@ -81,6 +81,6 @@ bilgisayar-toplama/
 
 ---
 
-## Paylaşım
+## Lisans
 
 Bu proje eğitim amaçlı olarak geliştirilmiştir. Kod yapısını inceleyebilir ve kendi projelerinizde referans olarak kullanabilirsiniz.
